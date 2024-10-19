@@ -6,7 +6,9 @@ export const CustomImage=(props)=>{
     return(
         <>
         <img src={source} width={width} height={height}/>
+        
         </>
+
     )
 }
 
