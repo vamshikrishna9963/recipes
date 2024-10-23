@@ -1,12 +1,20 @@
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom"; // Add useHistory for navigation
 import { RECIPE_LIST } from "../../endpoints/endpoints";
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap
+import { GlobalData } from "../../navStack/navStack";
 
 const Details_screen = () => {
     const [eachdata, setEachdata] = useState({});
     const { detailId } = useParams();
+
+    const {handleFavoriteClick}=useContext(GlobalData)
+    const [dates,setdates]=useState(false)
+
+    const handClick=()=>{
+        
+    }
     // const history = useHistory(); // Hook to navigate programmatically
 
     useEffect(() => {
@@ -17,16 +25,15 @@ const Details_screen = () => {
             }
         };
         fetchData();
-    }, [detailId]);
+        document.title=(eachdata.name)
+    }, [detailId,eachdata]);
 
-    const handleFavoriteClick = () => {
-        // Navigate to favorites or handle adding to favorites here
-        console.log("Added to favorites:", eachdata.name);
-        history.push("/favorites");
-    };
+    
 
     return (
         <div className="container mt-5">
+         
+         
             <h1 className="text-center mb-4">Recipe Details</h1>
 
             {eachdata.id ? (
@@ -55,7 +62,7 @@ const Details_screen = () => {
                                 {/* Ingredients Table */}
                                 <h5>Ingredients</h5>
                                 <table className="table table-striped">
-                                    <thead>
+                                    <thead >
                                         <tr>
                                             <th>#</th>
                                             <th>Ingredient</th>
@@ -92,7 +99,7 @@ const Details_screen = () => {
 
                                 <p className="card-text"><strong>Rating:</strong> {eachdata.rating} ⭐</p>
                                 <p className="card-text"><strong>Reviews:</strong> {eachdata.reviewCount}</p>
-                                <button className="btn btn-primary" onClick={handleFavoriteClick}>Add to Favorites</button>
+                                <button className="btn btn-primary" onClick={()=>handleFavoriteClick(eachdata)}>{eachdata ? "Add to Favorites":"go to fav"}</button>
                             </div>
                         </div>
                     </div>

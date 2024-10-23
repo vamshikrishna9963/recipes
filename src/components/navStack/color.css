@@ -1,5 +1,29 @@
-.imageset:hover{
-    width: 600px;
-    transform: scale(1.2,1.4);
-    border-radius: 3px;
+/* .card{
+    background-color: green;
+    
+} */
+/* .imageStyle{ */
+    
+    /* transform: scale(1.2,1.4); */
+    /* border-radius: 300px ;
+    box-shadow: 2px solid red; */
+    
+/* } */
+.links{
+    text-decoration: none;
+    color:white;
+    
+   
 }
+.box{
+    border-radius: 10px;
+}
+.box:hover{
+    box-shadow: 10px 10px 10px  lightslategray;
+    /* transform: scale(1.1,1); */
+}
+/* .boxes:hover{
+    transform: scale(1.1,1);
+} */
+
+
