@@ -77,7 +77,7 @@ const Recipe_screen = () => {
                                 {/* <div className="card h-75  shadow-lg p-2 mb-5 bg-white box"> */}
                                     <img 
                                         src={each.image || "https://source.unsplash.com/400x300/?food"} 
-                                        className="w-100 " 
+                                        className="w-100 images" 
                                         alt={each.name} 
                                     />
                                     <div className="card-body">

@@ -5,6 +5,7 @@ import Navbars from "./navbar"
 import Details_screen from "../screens/details/details"
 import NavbarLink from "./navbar"
 import { createContext, useState } from "react"
+import Invalid_screen from "../screens/invalidscreen/invalid"
 // import { Navbar } from "react-bootstrap"
 
 export const GlobalData=createContext()
@@ -47,6 +48,7 @@ export const Navigation=()=>{
             <Route path="/" element={<Recipe_screen/>}/>
             <Route path="favourite" element={<Favourite_screen/>}/>
             <Route path="recipes/:detailId" element={<Details_screen/>}/>
+            <Route path="/*" element={<Invalid_screen/>}/>
         </Routes>
         </GlobalData.Provider>
     )
