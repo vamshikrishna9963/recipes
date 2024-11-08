@@ -1,0 +1,91 @@
+.active{
+    color: red;
+}
+.nav-link:hover{
+
+    color: red;
+    background-color: rgb(78, 51, 42,0.2);
+}
+
+/* Base styles for desktop */
+.navbar {
+    padding: 1rem 2rem;
+  
+  }
+  
+  .search-input,
+  .filter-select,
+  .search-btn {
+    margin-right: 0.5rem;
+    width: auto;
+ 
+  }
+  
+  .nav-link, .navbar-brand {
+    font-size: 1rem;
+  }
+  
+  /* Media query for tablets (768px and below) */
+  @media (max-width: 768px) {
+    .navbar {
+      padding: 0.8rem 1.5rem;
+    }
+ 
+    .search-input,
+    .filter-select {
+      width: 100%; /* Full width on smaller screens */
+      margin-bottom: 0.5rem;
+    }
+  
+    
+
+    .search-btn {
+      width: 100%;
+      margin-top: 0.5rem;
+    }
+  
+    .nav-link, .navbar-brand {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Media query for phones (576px and below) */
+  @media (max-width: 576px) {
+    
+    .navbar {
+      flex-direction: row;
+      padding: 0.5rem 1rem;
+      text-align: center;
+
+      background-color: red;
+    }
+  
+   
+
+    .navbar-toggler {
+      margin-bottom: 0.5rem;
+      
+
+      
+    }
+  
+    .search-input,
+    .filter-select {
+      width: 100%;
+      text-align: center;
+      width: 400px;
+       
+    }
+    
+    
+  
+    .navbar-brand,
+    .nav-link {
+      font-size: 0.85rem;
+      text-align: center;
+    }
+  
+    /* Hide "Favorite Screen" text and show only the count */
+   
+  }
+  
