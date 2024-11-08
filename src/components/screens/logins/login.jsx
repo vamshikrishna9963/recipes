@@ -22,7 +22,7 @@ const Logins_screen=()=>{
       try{
         await signInWithEmailAndPassword(auth, email, password);
         console.log('login successfully');
-        window.location.href='/'
+        window.location.href='/recipes'
         toast.success("user login successfully",{
           position:"top-center"
         })

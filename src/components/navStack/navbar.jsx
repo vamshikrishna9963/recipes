@@ -38,7 +38,7 @@ function NavbarLink() {
         <div className={`collapse navbar-collapse ${isOpen ? 'show' : ''}`} id="navbarTogglerDemo03">
           <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
             <li className="nav-item">
-              <NavLink className="nav-link fs-4 " to="/">Home</NavLink>
+              <NavLink className="nav-link fs-4 " to="recipes">Home</NavLink>
             </li>
             <li className="nav-item">
               <NavLink className="nav-link fs-4 " to="/favourite">Favorite Screen {favItem.length}</NavLink>

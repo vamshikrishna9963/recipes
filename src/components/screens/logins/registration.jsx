@@ -142,7 +142,7 @@ const Register_screen=()=>{
     
 
    const gotoLogin=()=>{
-    window.location='/login'
+    window.location='/'
    }
 
     return(

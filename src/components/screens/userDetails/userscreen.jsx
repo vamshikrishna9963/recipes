@@ -30,7 +30,7 @@ const Profiles = () => {
   const handleLogout = () => {
     try {
       auth.signOut();
-      window.location.href = "/login"; // Redirect to login page
+      window.location.href = "/"; // Redirect to login page
     } catch (error) {
       console.log("Logout error: ", error.message);
     }

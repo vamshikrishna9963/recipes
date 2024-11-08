@@ -16,7 +16,7 @@ const googleHandler=()=>{
         console.log(result);
         const users=result.user
         if(result.user){
-            window.location='/'
+            window.location='/recipes'
             await setDoc(doc(db, 'Users', users.uid),{
               email:users.email,
               username:users.displayName,
