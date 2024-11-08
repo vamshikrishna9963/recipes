@@ -74,7 +74,7 @@ export const Navigation=()=>{
         }}>
        
         {
-            display ? <NavbarLink/> :<Logins_screen/>
+            display ? <NavbarLink/> :""
         }
     
         
