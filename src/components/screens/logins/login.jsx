@@ -26,10 +26,6 @@ const Logins_screen=()=>{
         toast.success("user login successfully",{
           position:"top-center"
         })
-        
-
-        
-
       }catch(error){
         console.log(error.message)
         toast.error(error.message,{
@@ -48,8 +44,6 @@ const Logins_screen=()=>{
         else{
             setEmailError('')
         }
-
-
     }
 
     const emailValidations=(value)=>{
@@ -61,7 +55,6 @@ const Logins_screen=()=>{
         else if(!email.test(value)){
             error="Please Enter Valid Email Address"
         }
-
         return error
     }
     
@@ -76,7 +69,6 @@ const Logins_screen=()=>{
         else{
             setPasswordError('')
         }
-
     }
 
     const passwordValidations=(value)=>{

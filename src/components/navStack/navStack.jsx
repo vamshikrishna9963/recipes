@@ -70,30 +70,19 @@ export const Navigation=()=>{
          removeHandler,
          searchHandlers,
          selectHandler
-
         }}>
-       
         {
             display ? <NavbarLink/> :""
         }
-    
-        
         <Routes>
-        
-       
             <Route path="/" element={user ? <Navigate to={"/recipes"}/>:<Logins_screen/>}/>
-            
-
             <Route path="/register" element={<Register_screen/>}/>
            <Route path="userdata" element={<User_screen/>}/>
-
             <Route path="recipes" element={<Recipe_screen/>}/>
             <Route path="favourite" element={<Favourite_screen/>}/>
             <Route path="favourite/:detailId" element={<Details_screen/>}/>
-            
             <Route path="recipes/:detailId" element={<Details_screen/>}/>
             <Route path="/*" element={<Invalid_screen/>}/>
-           
         </Routes>
         </GlobalData.Provider>
     )

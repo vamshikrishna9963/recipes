@@ -78,7 +78,7 @@ const Recipe_screen = () => {
                     {filteredRecipes.length > 0 ? (
                         filteredRecipes.map((each, index) => (
                             <div className="col-md-3 mb-5 box" key={index}>
-                                <Link className="links" to={`recipes/${each.id}`}>
+                                <Link className="links" to={`${each.id}`}>
                                     <img
                                         src={each.image || "https://source.unsplash.com/400x300/?food"}
                                         className="w-100 images"

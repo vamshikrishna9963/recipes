@@ -1,5 +1,5 @@
-import { signInWithPopup } from "firebase/auth";
-import { GoogleAuthProvider } from "firebase/auth"
+
+import { GoogleAuthProvider , signInWithPopup} from "firebase/auth"
 import { auth, db } from "./firebase";
 import { doc, setDoc } from "firebase/firestore";
 import { toast, ToastContainer } from "react-toastify"
@@ -24,8 +24,7 @@ const googleHandler=()=>{
             })
             toast.success("user login successfully",{
                 position:"top-center"
-            })
-            
+            })  
         }
         
     })
